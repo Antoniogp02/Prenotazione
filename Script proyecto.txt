@@ -1,0 +1,103 @@
+create table usuario (
+id INT(10) auto_increment not null,
+nombre VARCHAR(150) not null,
+Apellidos VARCHAR(200) not null,
+Correo VARCHAR(200) not null,
+Fecha_nacimiento date,
+Dni VARCHAR(10) not null,
+Telefono INT(10) not null,
+primary key (id)
+);
+
+
+
+Create table hoteles (
+Id INT (10) auto_increment not null,
+Nombre VARCHAR (100) not null,
+Localizacion VARCHAR (300) not null,
+Correo VARCHAR(200) not null,
+Telefono INT(10) not null,
+id_habitaciones INT(10) not null,
+id_servicios INT(10) not null,
+primary key (id),
+constraint habitaciones_fk foreign key (id_habitaciones) references habitaciones(id),
+constraint servicios_fk foreign key (id_servicios) references servicios(id)
+);
+
+
+
+Create table habitaciones (
+Id INT(10) auto_increment not null,
+num_habitacion INT(10) not null,
+num_personas INT(10) not null,
+Precio FLOAT,
+Fecha_entrada DATE,
+Fecha_salida DATE,
+primary key (id)
+);
+
+
+
+Create table servicios (
+Id INT(10) auto_increment not null,
+Internet BOOLEAN,
+Parking BOOLEAN,
+Accesibilidad BOOLEAN,
+Servicio_recepcion BOOLEAN,
+primary key (id)
+);
+
+
+
+Create table vuelo (
+Id INT(10) auto_increment not null,
+Nombre VARCHAR (100) not null,
+Aero_salida VARCHAR (300) not null,
+Aero_llegada VARCHAR (300) not null,
+Telefono_comp INT(10) not null,
+tipo_asiento VARCHAR (100) not null,
+cod_vuelo VARCHAR (100) not null,
+Fecha DATE,
+Precio FLOAT,
+primary key (id)
+);
+
+
+
+Create table transporte (
+Id INT(10) auto_increment not null,
+id_usuario INT (10) not null,
+id_hoteles INT(10) not null,
+tipo_transporte VARCHAR (100),
+primary key (id),
+constraint usuario_fk foreign key (id_usuario) references usuario(id),
+constraint hoteles_fk foreign key (id_hoteles) references hoteles(id)
+);
+
+
+
+Create table precio_transporte (
+Id INT (10) auto_increment not null,
+Cantidad FLOAT,
+id_transporte INT(10) not null,
+primary key (id),
+constraint transporte_fk foreign key (id_transporte) references transporte(id)
+);
+
+
+
+Create table reserva (
+Id INT (10) auto_increment not null,
+num_reserva INT (10) not null,
+Precio_total FLOAT,
+fecha_entrada DATE,
+fecha_salida DATE,
+lugar_destino VARCHAR (300) not null,
+id_usuario INT (10) not null,
+id_hoteles INT (10) not null,
+id_transporte INT (10) not null,
+primary key (id),
+Constraint usuarios_fk foreign key (id_usuario) references usuario(id),
+Constraint hoteless_fk foreign key (id_hoteles) references hoteles(id),
+Constraint transportes_fk foreign key (id_transporte) references transporte(id)
+);
