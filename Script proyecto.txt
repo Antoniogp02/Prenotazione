@@ -93,6 +93,7 @@ Precio_total FLOAT,
 fecha_entrada DATE,
 fecha_salida DATE,
 lugar_destino VARCHAR (300) not null,
+num_habitaciones INT (50) not null,
 id_usuario INT (10) not null,
 id_hoteles INT (10) not null,
 id_transporte INT (10) not null,
@@ -100,4 +101,20 @@ primary key (id),
 Constraint usuarios_fk foreign key (id_usuario) references usuario(id),
 Constraint hoteless_fk foreign key (id_hoteles) references hoteles(id),
 Constraint transportes_fk foreign key (id_transporte) references transporte(id)
+);
+
+create table tarifa (
+id INT (10) auto_increment not null,
+id_habitaciones INT (10) not null,
+cantidad FLOAT,
+Temporada VARCHAR (100) not null,
+primary key (id),
+constraint habitacioness_fk foreign key (id_habitaciones) references habitaciones(id)
+);
+
+create table disponibilidad (
+id INT (10) auto_increment not null,
+id_habitaciones INT (10) not null,
+disponible BOOLEAN,
+primary key (id)
 );
