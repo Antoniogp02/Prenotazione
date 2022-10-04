@@ -3,11 +3,17 @@ id INT(10) auto_increment not null,
 nombre VARCHAR(150) not null,
 Apellidos VARCHAR(200) not null,
 Correo VARCHAR(200) not null,
+genero boolean,
 Fecha_nacimiento date,
 Dni VARCHAR(10) not null,
 Telefono INT(10) not null,
 primary key (id)
 );
+
+
+insert into usuario  (nombre, apellidos, correo, genero, fecha_nacimiento, dni,telefono)
+values
+("Jose Fernando", "Cari Rojas", "jfcarirojas@safareyes.es", 0, "2000-12-03", "96473320S", 689304967);
 
 
 
@@ -24,6 +30,10 @@ constraint habitaciones_fk foreign key (id_habitaciones) references habitaciones
 constraint servicios_fk foreign key (id_servicios) references servicios(id)
 );
 
+insert into hoteles (Nombre,Localizacion, Correo,Telefono,id_habitaciones,id_servicios)
+values
+("Kayak", "Calle Calatrava", "kayak@kayak.es", 987263584, 1,1);
+
 
 
 Create table habitaciones (
@@ -36,6 +46,10 @@ Fecha_salida DATE,
 primary key (id)
 );
 
+insert into habitaciones (num_habitacion, num_personas, Precio, Fecha_entrada,Fecha_salida)
+values
+(001,4,150, "2021-06-15", "2021-06-30");
+
 
 
 Create table servicios (
@@ -47,20 +61,9 @@ Servicio_recepcion BOOLEAN,
 primary key (id)
 );
 
-
-
-Create table vuelo (
-Id INT(10) auto_increment not null,
-Nombre VARCHAR (100) not null,
-Aero_salida VARCHAR (300) not null,
-Aero_llegada VARCHAR (300) not null,
-Telefono_comp INT(10) not null,
-tipo_asiento VARCHAR (100) not null,
-cod_vuelo VARCHAR (100) not null,
-Fecha DATE,
-Precio FLOAT,
-primary key (id)
-);
+insert into servicios (Internet, Parking, Accesibilidad,Servicio_recepcion)
+values
+(1,0,1,1);
 
 
 
@@ -74,6 +77,10 @@ constraint usuario_fk foreign key (id_usuario) references usuario(id),
 constraint hoteles_fk foreign key (id_hoteles) references hoteles(id)
 );
 
+insert into transporte (id_usuario, id_hoteles, tipo_transporte)
+values
+(2, 1, "Coche: Turismo");
+
 
 
 Create table precio_transporte (
@@ -83,6 +90,10 @@ id_transporte INT(10) not null,
 primary key (id),
 constraint transporte_fk foreign key (id_transporte) references transporte(id)
 );
+
+insert into precio_transporte (cantidad,id_transporte)
+values
+(20, 10);
 
 
 
@@ -97,11 +108,17 @@ num_habitaciones INT (50) not null,
 id_usuario INT (10) not null,
 id_hoteles INT (10) not null,
 id_transporte INT (10) not null,
+id_mapamundi INT (10) not null,
 primary key (id),
 Constraint usuarios_fk foreign key (id_usuario) references usuario(id),
 Constraint hoteless_fk foreign key (id_hoteles) references hoteles(id),
-Constraint transportes_fk foreign key (id_transporte) references transporte(id)
+Constraint transportes_fk foreign key (id_transporte) references transporte(id),
+constraint mapamundi_fk foreign key (id_mapamundi) references mapamundi(id)
 );
+
+insert into reserva (num_reserva, Precio_total,fecha_entrada,fecha_salida,lugar_destino,num_habitaciones,id_usuario,id_hoteles,id_transporte,id_mapamundi)
+values
+(001, 1200, "2021-07-01", "2021-07-15", "España", 1,2,1,10,1);
 
 create table tarifa (
 id INT (10) auto_increment not null,
@@ -112,9 +129,30 @@ primary key (id),
 constraint habitacioness_fk foreign key (id_habitaciones) references habitaciones(id)
 );
 
+insert into tarifa (id_habitaciones, cantidad, Temporada)
+values
+(1, 50, "Verano");
+
 create table disponibilidad (
 id INT (10) auto_increment not null,
 id_habitaciones INT (10) not null,
 disponible BOOLEAN,
+primary key (id),
+constraint habitacionesss_fk foreign key (id_habitaciones) references habitaciones(id)
+);
+
+insert into disponibilidad (id_habitaciones, disponible)
+values
+(1, 1);
+
+create table mapamundi (
+id INT (10) auto_increment not null,
+continente VARCHAR (200) not null,
+paises VARCHAR (200) not null,
+ciudades VARCHAR (300) not null,
 primary key (id)
 );
+
+insert into mapamundi (continente, paises,ciudades)
+values
+("Europa", "España", "Sevilla");
