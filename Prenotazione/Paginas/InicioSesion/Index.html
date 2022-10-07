@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prenotazione</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="icon" href="imagenes/pluma.png">
+</head>
+<body>
+
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="#">
+            <h1>Create One</h1>
+            <div class="social-container">
+                <a href="https://es-es.facebook.com/" class="social"><i></i><img src="https://cdn-icons-png.flaticon.com/128/1384/1384168.png" width="25px"/></a>
+                <a href="https://twitter.com/?lang=es" class="social"><i></i><img src="https://cdn-icons-png.flaticon.com/128/1384/1384174.png" width="25px"/></a>
+                <a href="https://es.linkedin.com/" class="social"><i></i><img src="https://cdn-icons-png.flaticon.com/512/1384/1384171.png" width="25px"/></a>
+            </div>
+            <span>O usa tu email para registrarte</span>
+            <input type="text" placeholder="Nombre" />
+            <input type="text" placeholder="Apellidos" />
+            <input type="date" placeholder="Fecha de nacimiento" />
+            <p>
+                género:
+                <select name="genero" class="booleano">
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                </select>
+            </p>
+            <input type="text" placeholder="DNI" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Constraseña" />
+            <button class="button">
+                <span>Siguiente</span>
+                <svg viewBox="0 0 15 13">
+                    <polyline points="2 6.5 6 10.5 13 2.5"></polyline>
+                </svg>
+            </button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="#">
+            <h1>Sign in</h1>
+            <div class="social-container">
+                <a href="https://es-es.facebook.com/" class="social"><i></i><img src="https://cdn-icons-png.flaticon.com/128/1384/1384168.png" width="25px"/></a>
+                <a href="https://twitter.com/?lang=es" class="social"><i></i><img src="https://cdn-icons-png.flaticon.com/128/1384/1384174.png" width="25px"/></a>
+                <a href="https://es.linkedin.com/" class="social"><i></i><img src="https://cdn-icons-png.flaticon.com/512/1384/1384171.png" width="25px"/></a>
+            </div>
+            <span>o ingresa tu cuenta</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Contraseña" />
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <button class="button">
+                <span>Entrar</span>
+                <svg viewBox="0 0 15 13">
+                    <polyline points="2 6.5 6 10.5 13 2.5"></polyline>
+                </svg>
+            </button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>REGISTRATE</h1>
+                <p>Mantente en contacto con nosotros registrando tus datos personales :)</p>
+                <button class="ghost" id="signIn"><b><-INICIO SESION</b></button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>BIENVENIDO</h1>
+                <p>Ingresa tus datos personales y empieza tu aventura con nosotros :D</p>
+                <button class="ghost" id="signUp"><b>CREAR CUENTA-></b></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+<script>
+
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById("container");
+
+    signUpButton.addEventListener('click', () => {
+        container.classList.add('right-panel-active');
+    });
+
+    signInButton.addEventListener('click', () => {
+        container.classList.remove('right-panel-active');
+    });
+
+    document.querySelectorAll('.button').forEach(button => {
+        button.addEventListener('click', e => {
+            button.classList.add('processing');
+            e.preventDefault();
+        });
+    });
+
+</script>
+
+</html>
