@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRENOTAZIONE</title>
+    <link rel="stylesheet" href="Inicio.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="marcasAlquiler.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="coches.css">
+    <link rel="stylesheet" href="video.css">
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+
+<div class="container" >
+    <header>
+        <nav class="navegacion">
+            <img class="logo" src="Imagenes/pluma.png">
+            <ul class="menu">
+                <li><a href="index.html">HOSPEDAJE</a></li>
+                <li><a href="index.html">RESERVA</a></li>
+                <li><a href="index.html">ALQUILER</a></li>
+                <li><a href="index.html">SERVICIOS</a></li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 text-center">
+                <h1 class="textoCarousel" style="color: black">Encuentra un vehículo para tu destino vacacional</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="team" class="pb-5">
+    <div class="container">
+        <h5 class="section-title h1" style="color: black ">Marcas de Alquiler</h5>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" >
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="data:image/png;base64,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" alt="card image"></p>
+                                    <h4 class="card-title">AVIS</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">AVIS</h4>
+                                    <p class="des">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.avis.es/">
+                                                <img class="iconoWEB" src="https://images.vexels.com/media/users/3/205387/isolated/preview/9e5a4a16e78a187fc3e47fc6e2c5f03a-trazo-de-icono-de-sitio-web-de-internet.png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://play-lh.googleusercontent.com/I9DtXAoL6ehOjbEcFCIu3EE-Z55FylyXmIWOTWsc2nHBj4h_sgcsIw0bYt0illSKoA" alt="card image"></p>
+                                    <h4 class="card-title">Europcar</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Europcar</h4>
+                                    <p class="des">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.europcar.es/es-es">
+                                                <img class="iconoWEB" src="https://images.vexels.com/media/users/3/205387/isolated/preview/9e5a4a16e78a187fc3e47fc6e2c5f03a-trazo-de-icono-de-sitio-web-de-internet.png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://www.goldcar.es/assets/img/footer/logo.png" alt="card image"></p>
+                                    <h4 class="card-title">Goldcar</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Goldcar</h4>
+                                    <p class="des">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.goldcar.es/">
+                                                <img class="iconoWEB" src="https://images.vexels.com/media/users/3/205387/isolated/preview/9e5a4a16e78a187fc3e47fc6e2c5f03a-trazo-de-icono-de-sitio-web-de-internet.png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://1000marcas.net/wp-content/uploads/2020/11/Hertz-Logo-1963.png" alt="card image"></p>
+                                    <h4 class="card-title">Hertz</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Hertz</h4>
+                                    <p class="des">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.hertz.es/rentacar/reservation/">
+                                                <img class="iconoWEB" src="https://images.vexels.com/media/users/3/205387/isolated/preview/9e5a4a16e78a187fc3e47fc6e2c5f03a-trazo-de-icono-de-sitio-web-de-internet.png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://trailibiza.com/Portals/103/EasyDNNnews/7879/telefono-sixt.png" alt="card image"></p>
+                                    <h4 class="card-title">Sixt</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Sixt</h4>
+                                    <p class="des">This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://www.sixt.es/#/">
+                                                <img class="iconoWEB" src="https://images.vexels.com/media/users/3/205387/isolated/preview/9e5a4a16e78a187fc3e47fc6e2c5f03a-trazo-de-icono-de-sitio-web-de-internet.png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://alquilaruncoche.com/admin/resources/logos/Logo-TopCar-vertical.png" alt="card image"></p>
+                                    <h4 class="card-title">TopCar</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">TopCar</h4>
+                                    <p class="des">This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.This is basic card with image on top, title, description and button.</p>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank" href="https://top-car-hire.com/">
+                                                <img class="iconoWEB" src="https://images.vexels.com/media/users/3/205387/isolated/preview/9e5a4a16e78a187fc3e47fc6e2c5f03a-trazo-de-icono-de-sitio-web-de-internet.png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<div class="container">
+    <br>
+    <h2 style="text-align: center" >Vehículos disponibles en Prenotazione</h2>
+        <br>
+        <div class="row" id="ads">
+            <div class="col-md-4">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">SUV</span>
+                        <span class="card-notify-year">2018</span>
+                        <img class="img-fluid" src="https://www.autofacil.es/wp-content/uploads/2021/05/preview_64103108377d9.jpg" alt="Alternate Text" />
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>Renault Kadjar</h5>
+                        </div>
+                        <a class="ad-btn" href="https://www.renault.es/renault-webstore.html?model.code=FEH">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Turismo</span>
+                        <span class="card-notify-year">2022</span>
+                        <img class="img-fluid" src="https://www.twall.co.uk/assets/brands/ford/fiesta/Ford-Fiesta-2022-What-changes-does-the-utility-present-to-801x375.png" alt="Alternate Text" />
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>Ford <br>Fiesta</h5>
+                        </div>
+                        <a class="ad-btn" href="https://www.ford.es/turismos/nuevo-fiesta">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">4 X 4</span>
+                        <span class="card-notify-year">2019</span>
+                        <img class="img-fluid" src="https://www.camalmusalem.cl/wp-content/uploads/2020/07/rav4-adventure.png" alt="Alternate Text" />
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>Toyota <br>RAV4</h5>
+                        </div>
+                        <a class="ad-btn" href="https://www.toyota.es/world-of-toyota/articles-news-events/2018/toyota-rav4-2019">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-top: 50px">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Berlina</span>
+                        <span class="card-notify-year">2021</span>
+                        <img class="img-fluid" src="https://rentingvivo.com/wp-content/uploads/2022/05/fondo-blanco-8.png" alt="Alternate Text" />
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>ALFA ROMEO GIULIA QUADRIFOGLIO</h5>
+                        </div>
+                        <a class="ad-btn" href="https://www.alfaromeo.es/modelos/quadrifoglio/giulia-quadrifoglio">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-top: 50px">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Deportivo</span>
+                        <span class="card-notify-year">2020</span>
+                        <img class="img-fluid" src="https://www.avtotachki.com/wp-content/uploads/2020/05/audi-r8-coupe-r8-1.png" alt="Alternate Text" />
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>Audi R8 <br>Coupe R8</h5>
+                        </div>
+                        <a class="ad-btn" href="https://www.audi.es/es/web/es/modelos/r8/r8-coupe-v10-performance-quattro.html">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-top: 50px">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">SUV</span>
+                        <span class="card-notify-year">2022</span>
+                        <img class="img-fluid" src="https://soymotor.com/sites/default/files/imagenes/noticia/tesla-model-x-2021-exterior-frontal-soymotor.jpg" alt="Alternate Text" />
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>Tesla <br>Model X</h5>
+                        </div>
+                        <a class="ad-btn" href="https://www.tesla.com/es_es/modelx">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+</body>
+<footer>
+    <div class="hex">
+        <ul2>
+            <li2>
+                <a2 class="facebook" href="https://es-es.facebook.com/">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img src="Imagenes/facebook.png">
+                </a2>
+            </li2>
+            <li2>
+                <a2 class="twitter" href="https://twitter.com/?lang=es">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img src="Imagenes/twitter.png">
+                </a2>
+            </li2>
+            <li2>
+                <a2 class="instagram" href="https://www.instagram.com/">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img src="Imagenes/instagram.png">
+                </a2>
+            </li2>
+            <li2>
+                <a2 class="google" href="https://accounts.google.com/v3/signin/identifier?dsh=S-871874718%3A1664737003774122&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Dwm&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Dwm&osid=1&passive=1209600&service=mail&flowName=Gli2fWebSignIn&flowEntry=ServiceLogin&ifkv=AQDHYWqRHrKCD0Jaf-qVQqKSPonOCBPpoiC5fH8tWL9QSWT5kMrZb2fGtDNrYnLpXixs_gcP3CHO1g">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img src="Imagenes/google.png">
+                </a2>
+            </li2>
+        </ul2>
+
+        <H5>© prenotazione</H5>
+    </div>
+</footer>
+</html>
