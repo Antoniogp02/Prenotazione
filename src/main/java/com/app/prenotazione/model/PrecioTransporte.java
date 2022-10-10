@@ -6,8 +6,8 @@ import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "precio_transporte")
-public class Precio_transporte {
+@Table(name = "precioTransporte")
+public class PrecioTransporte {
 
 
     private int id;
@@ -42,7 +42,7 @@ public class Precio_transporte {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Precio_transporte that = (Precio_transporte) o;
+        PrecioTransporte that = (PrecioTransporte) o;
         return id == that.id && id_transporte == that.id_transporte && Objects.equals(cantidad, that.cantidad);
     }
 
