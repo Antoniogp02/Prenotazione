@@ -2,6 +2,7 @@ package com.app.prenotazione.model;
 
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Objects;
 
@@ -10,6 +11,7 @@ import java.util.Objects;
 public class PrecioTransporte {
 
 
+    @Id
     private int id;
     private Float cantidad;
     private int id_transporte;

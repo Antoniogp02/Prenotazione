@@ -3,6 +3,7 @@ package com.app.prenotazione.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Objects;
 
@@ -11,6 +12,7 @@ import java.util.Objects;
 public class Tarifa {
 
 
+    @Id
     private int id;
     private int id_habitaciones;
     private Float cantidad;
