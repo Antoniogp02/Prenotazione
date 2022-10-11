@@ -17,4 +17,10 @@ public class HotelesService {
         return hotelesRepository.findAll();
     }
 
+    public Hoteles getByNombre(String nombre){
+        List<Hoteles> hoteles = obtenerHoteles();
+
+        return hotelesRepository.findbynombre(String.valueOf(hoteles));
+    }
+
 }

@@ -1,6 +1,6 @@
 package com.app.prenotazione.controller;
 
-import com.app.prenotazione.model.Precio_transporte;
+import com.app.prenotazione.model.PrecioTransporte;
 import com.app.prenotazione.service.Precio_transporteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +15,7 @@ public class Precio_transporteController {
     private Precio_transporteService precio_transporteService;
 
     @RequestMapping("/precio_transportes")
-    public List<Precio_transporte> obtenerPrecio_transportes(){
+    public List<PrecioTransporte> obtenerPrecio_transportes(){
         return precio_transporteService.obtenerPrecio_transportes();
     }
 
