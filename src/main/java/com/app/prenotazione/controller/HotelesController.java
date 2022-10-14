@@ -25,11 +25,27 @@ public class HotelesController {
         return hotelesService.getAll();
     }
 
+    @GetMapping("/hoteles/nuevo")
+    public ModelAndView nuevoHotel(){
+        ModelAndView model = new ModelAndView("nuevoHotel");
+        Hoteles hoteles = new Hoteles();
+        List<Habitaciones> habitaciones = habitacionesService.getAll();
+        model.addObject("listahabitaciones", habitaciones);
+        model.addObject("hoteles", hoteles);
+        return model;
+    }
+
 
 
     @PostMapping("/hoteles/guardar")
     public void guardarHotel( @RequestBody @ModelAttribute("hoteles") Hoteles hoteles){
         hotelesService.guardarHotel(hoteles);
+    }
+
+    @PostMapping("/eliminar")
+    public String eliminar(@RequestBody Integer id){
+        hotelesService.eliminar(id);
+        return "Hotel eliminado correctamente";
     }
 
 }

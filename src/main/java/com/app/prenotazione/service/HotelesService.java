@@ -16,7 +16,6 @@ public class HotelesService {
     private HotelesRepository hotelesRepository;
 
     public List<Hoteles> getAll(){
-        Habitaciones habitaciones = new Habitaciones();
         return hotelesRepository.findAll();
     }
 
@@ -46,6 +45,10 @@ public class HotelesService {
 
     public void guardarHotel(Hoteles hoteles){
         hotelesRepository.save(hoteles);
+    }
+
+    public void eliminar(Integer id){
+        hotelesRepository.deleteById(id);
     }
 
 }

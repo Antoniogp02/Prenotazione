@@ -18,6 +18,10 @@ public class ReservaService {
         return reservaRepository.findAll();
     }
 
+    public List<Reserva> getAll(){
+        return reservaRepository.findAll();
+    }
+
     public void guardarReserva(int id, Integer num_reserva, Float precio_total , Date fecha_entrada,Date fecha_salida, String lugar_destino, Integer num_habitaciones, Usuario usuario, Hoteles hoteles, Transporte transporte, MapaMundi mapaMundi){
         Reserva reservasGuardar = new Reserva();
         if(id!= 0){
@@ -40,6 +44,10 @@ public class ReservaService {
 
     public void guardarReserva(Reserva reserva){
         reservaRepository.save(reserva);
+    }
+
+    public void eliminar(Integer id){
+        reservaRepository.deleteById(id);
     }
 
 }

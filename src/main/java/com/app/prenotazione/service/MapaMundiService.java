@@ -26,4 +26,8 @@ public class MapaMundiService {
         return mapaMundiRepository.findById(id).orElse(null);
     }
 
+    public List<MapaMundi> getAll(){
+        return mapaMundiRepository.findAll();
+    }
+
 }

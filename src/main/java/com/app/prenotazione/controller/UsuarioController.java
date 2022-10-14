@@ -1,12 +1,12 @@
 package com.app.prenotazione.controller;
 
 
-import com.app.prenotazione.model.Hoteles;
-import com.app.prenotazione.model.Usuario;
+import com.app.prenotazione.model.*;
 import com.app.prenotazione.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -22,9 +22,24 @@ public class UsuarioController {
         return usuarioService.obtenerUsuarios();
     }
 
+    @GetMapping("/usuarios/nuevo")
+    public ModelAndView nuevaReserva(){
+        ModelAndView model = new ModelAndView("nuevoUsuario");
+        Usuario usuario = new Usuario();
+        model.addObject("usuario", usuario);
+        return model;
+    }
+
+
     @PostMapping("/usuarios/guardar")
     public void guardarUsuario( @RequestBody @ModelAttribute("usuarios") Usuario usuario){
         usuarioService.guardarUsuario(usuario);
+    }
+
+    @PostMapping("/eliminar")
+    public String eliminar(@RequestBody Integer id){
+        usuarioService.eliminar(id);
+        return "Usuario eliminado correctamente";
     }
 
 }

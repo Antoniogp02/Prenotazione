@@ -43,4 +43,8 @@ public class TarifaService {
         tarifaRepository.save(tarifa);
     }
 
+    public void eliminar(Integer id){
+        tarifaRepository.deleteById(id);
+    }
+
 }

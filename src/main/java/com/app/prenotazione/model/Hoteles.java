@@ -10,9 +10,17 @@ public class Hoteles {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
+    @Column
     private String nombre;
+
+    @Column
     private String localizacion;
+
+    @Column
     private String correo;
+
+
     private int telefono;
     private int id_habitaciones;
     private int id_servicios;

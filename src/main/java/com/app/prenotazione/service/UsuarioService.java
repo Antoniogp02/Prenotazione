@@ -23,6 +23,10 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
 
+    public List<Usuario> getAll(){
+        return usuarioRepository.findAll();
+    }
+
     public void guardarUsuario(int id, String nombre, String apellidos , String correo, Boolean genero, Date fecha_nacimiento, String DNI, Integer telefono){
         Usuario usuariosGuardar = new Usuario();
         if(id!= 0){
@@ -41,6 +45,10 @@ public class UsuarioService {
 
     public void guardarUsuario(Usuario usuario){
         usuarioRepository.save(usuario);
+    }
+
+    public void eliminar(Integer id){
+        usuarioRepository.deleteById(id);
     }
 
 }

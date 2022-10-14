@@ -12,10 +12,19 @@ public class Habitaciones {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
+    @Column
     private int num_habitacion;
+
+    @Column
     private int num_personas;
+
+    @Column
     private Float precio;
+
+    @Column
     private Date fecha_entrada;
+    @Column
     private Date fecha_salida;
 
 
