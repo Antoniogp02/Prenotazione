@@ -16,7 +16,7 @@ public class HabitacionesController {
 
     @RequestMapping("/habitaciones")
     public List<Habitaciones> obtenerHabitaciones(){
-        return habitacionesService.obtenerHabitaciones();
+        return habitacionesService.getAll();
     }
 
 }

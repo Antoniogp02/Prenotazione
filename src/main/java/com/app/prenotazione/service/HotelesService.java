@@ -13,14 +13,16 @@ public class HotelesService {
     @Autowired
     private HotelesRepository hotelesRepository;
 
-    public List<Hoteles> obtenerHoteles(){
+    public guardarHotel(Hoteles hoteles) {
+
+    }
+
+    public List<Hoteles> getAll(){
         return hotelesRepository.findAll();
     }
 
-    public Hoteles getByNombre(String nombre){
-        List<Hoteles> hoteles = obtenerHoteles();
-
-        return hotelesRepository.findbynombre(String.valueOf(hoteles));
+    public Hoteles getById(int id){
+        return hotelesRepository.findById(id).orElse(null);
     }
 
 }

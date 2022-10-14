@@ -13,8 +13,4 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface HotelesRepository extends JpaRepository<Hoteles,Integer> {
-
-
-   public Hoteles findbynombre(String nombre);
-}
+public interface HotelesRepository extends JpaRepository<Hoteles,Integer> {}
