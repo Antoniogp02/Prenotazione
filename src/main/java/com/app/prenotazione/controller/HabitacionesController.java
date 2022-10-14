@@ -3,8 +3,7 @@ package com.app.prenotazione.controller;
 import com.app.prenotazione.model.Habitaciones;
 import com.app.prenotazione.service.HabitacionesService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,5 +17,32 @@ public class HabitacionesController {
     public List<Habitaciones> obtenerHabitaciones(){
         return habitacionesService.obtenerHabitaciones();
     }
+
+    @GetMapping("/listar")
+    public List<Habitaciones> listarIngredientes(){
+        return  habitacionesService.listar();
+    }
+
+
+    @GetMapping("/buscar")
+    public Habitaciones getById(@RequestParam Integer id){
+        return  habitacionesService.buscarPorID(id);
+    }
+
+
+    @PostMapping("/guardar")
+    public String guardarHabitaciones(@RequestBody Habitaciones habitaciones){
+        habitacionesService.guardar(habitaciones);
+        return "Habitación guardada correctamente";
+    }
+
+    @PostMapping("/eliminar")
+    public String eliminar(@RequestBody Integer id){
+        habitacionesService.eliminar(id);
+        return "Habitación eliminada correctamente";
+    }
+
+
+
 
 }

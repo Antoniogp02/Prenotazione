@@ -17,4 +17,20 @@ public class HabitacionesService {
         return habitacionesRepository.findAll();
     }
 
+    public List<Habitaciones> listar(){
+        return habitacionesRepository.findAll();
+    }
+
+    public Habitaciones buscarPorID(Integer id){
+        return habitacionesRepository.findById(id).orElse(null);
+    }
+
+    public void guardar(Habitaciones habitaciones){
+        habitacionesRepository.save(habitaciones);
+    }
+
+    public void eliminar(Integer id){
+        habitacionesRepository.deleteById(id);
+    }
+
 }
