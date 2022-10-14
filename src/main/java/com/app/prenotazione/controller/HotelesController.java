@@ -20,10 +20,7 @@ public class HotelesController {
     @Autowired
     private HabitacionesService habitacionesService;
 
-    @RequestMapping("/hoteles")
-    public List<Hoteles> obtenerHoteles(){
-        return hotelesService.getAll();
-    }
+
 
     @GetMapping("/hoteles/nuevo")
     public ModelAndView nuevoHotel(){
