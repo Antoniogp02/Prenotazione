@@ -55,7 +55,7 @@ public class ReservaController {
     @DeleteMapping("/reservas/eliminar")
     public String eliminar(@RequestBody Integer id){
         reservaService.eliminar(id);
-        return "Datos eliminados correctamente";
+        return "Reserva eliminada correctamente";
     }
 
 }

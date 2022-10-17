@@ -49,7 +49,7 @@ public class HotelesController {
     @DeleteMapping("/hoteles/eliminar")
     public String eliminar(@RequestBody Integer id){
         hotelesService.eliminar(id);
-        return "Datos eliminados correctamente";
+        return "Hotel eliminado correctamente";
     }
 
 

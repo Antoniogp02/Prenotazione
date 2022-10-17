@@ -44,7 +44,7 @@ public class TarifaController {
     @DeleteMapping("/tarifas/eliminar")
     public String eliminar(@RequestBody Integer id){
         tarifaService.eliminar(id);
-        return "Datos eliminados correctamente";
+        return "Tarifa eliminada correctamente";
     }
 
 }

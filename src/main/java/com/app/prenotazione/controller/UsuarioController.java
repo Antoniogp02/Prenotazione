@@ -40,7 +40,7 @@ public class UsuarioController {
     @DeleteMapping("/usuarios/eliminar")
     public String eliminar(@RequestBody Integer id){
         usuarioService.eliminar(id);
-        return "Datos eliminados correctamente";
+        return "Usuario eliminado correctamente";
     }
 
 }
