@@ -12,7 +12,7 @@ import java.util.List;
 @Controller
 public class InicioController {
 
-    @RequestMapping("/")
+    @RequestMapping("/inicio")
     public String cargarInicio(){
         return "inicio";
     }

@@ -46,11 +46,7 @@ public class HabitacionesController {
         return "Habitación guardada correctamente";
     }
 
-    @PostMapping("/eliminar")
-    public String eliminar(@RequestBody Integer id){
-        habitacionesService.eliminar(id);
-        return "Habitación eliminada correctamente";
-    }
+
 
 
 

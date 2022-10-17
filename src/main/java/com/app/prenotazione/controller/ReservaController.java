@@ -52,10 +52,10 @@ public class ReservaController {
         reservaService.guardarReserva(reserva);
     }
 
-    @PostMapping("/eliminar")
+    @DeleteMapping("/reservas/eliminar")
     public String eliminar(@RequestBody Integer id){
         reservaService.eliminar(id);
-        return "Reserva eliminada correctamente";
+        return "Datos eliminados correctamente";
     }
 
 }

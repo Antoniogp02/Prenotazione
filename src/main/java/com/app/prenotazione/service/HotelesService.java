@@ -39,8 +39,8 @@ public class HotelesService {
         hotelesGuardar.setCorreo(correo);
         hotelesGuardar.setLocalizacion(localizacion);
         hotelesGuardar.setTelefono(telefono);
-        hotelesGuardar.setId_habitaciones(Integer.parseInt(""));
-        hotelesGuardar.setId_servicios(Integer.parseInt(""));
+        hotelesGuardar.setHabitaciones(habitaciones);
+        hotelesGuardar.setServicios(servicios);
     }
 
     public void guardarHotel(Hoteles hoteles){

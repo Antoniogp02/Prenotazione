@@ -36,10 +36,11 @@ public class UsuarioController {
         usuarioService.guardarUsuario(usuario);
     }
 
-    @PostMapping("/eliminar")
+
+    @DeleteMapping("/usuarios/eliminar")
     public String eliminar(@RequestBody Integer id){
         usuarioService.eliminar(id);
-        return "Usuario eliminado correctamente";
+        return "Datos eliminados correctamente";
     }
 
 }

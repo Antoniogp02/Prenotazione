@@ -39,10 +39,12 @@ public class TarifaController {
 
     }
 
-    @PostMapping("/eliminar")
+
+
+    @DeleteMapping("/tarifas/eliminar")
     public String eliminar(@RequestBody Integer id){
         tarifaService.eliminar(id);
-        return "Tarifa eliminada correctamente";
+        return "Datos eliminados correctamente";
     }
 
 }

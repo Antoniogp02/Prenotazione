@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @RestController
@@ -19,6 +20,12 @@ public class HotelesController {
 
     @Autowired
     private HabitacionesService habitacionesService;
+
+
+    @RequestMapping("/hoteles")
+    public List<Hoteles> getAll(){
+        return hotelesService.getAll() ;
+    }
 
 
 
@@ -39,10 +46,11 @@ public class HotelesController {
         hotelesService.guardarHotel(hoteles);
     }
 
-    @PostMapping("/eliminar")
+    @DeleteMapping("/hoteles/eliminar")
     public String eliminar(@RequestBody Integer id){
         hotelesService.eliminar(id);
-        return "Hotel eliminado correctamente";
+        return "Datos eliminados correctamente";
     }
+
 
 }
