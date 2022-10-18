@@ -1,7 +1,7 @@
 package com.app.prenotazione.service;
 
 
-import com.app.prenotazione.model.Precio_transporte;
+import com.app.prenotazione.model.PrecioTransporte;
 import com.app.prenotazione.repository.Precio_transporteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +15,7 @@ public class Precio_transporteService {
     private Precio_transporteRepository Precio_transporteRepository;
 
     public List<PrecioTransporte> obtenerPrecio_transportes(){
-        return precio_transporteRepository.findAll();
+        return Precio_transporteRepository.findAll();
     }
 
 }
