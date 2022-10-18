@@ -11,6 +11,6 @@ import java.util.List;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
 
-    @Query(value = "select u from Usuario u order by u.id ")
-    List<Hoteles> obtenerHoteles();
+    @Query(value = "select id, nombre, apellidos, correo, fecha_nacimiento, dni, telefono from usuario", nativeQuery = true)
+    List<Usuario> obtenerUsuario();
 }
