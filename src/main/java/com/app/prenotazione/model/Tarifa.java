@@ -2,7 +2,6 @@ package com.app.prenotazione.model;
 
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Objects;
@@ -15,8 +14,10 @@ public class Tarifa {
     @Id
     private int id;
     private int id_habitaciones;
+    private int id_hotel;
     private Float cantidad;
     private String temporada;
+
 
     public int getId() {
         return id;
@@ -50,18 +51,26 @@ public class Tarifa {
         this.temporada = temporada;
     }
 
+    public int getid_hotel() {
+        return id_hotel;
+    }
+
+    public void setid_hotel(Integer id_hotel) {
+        this.id_hotel = id_hotel;
+    }
+
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Tarifa tarifa = (Tarifa) o;
-        return id == tarifa.id && id_habitaciones == tarifa.id_habitaciones && Objects.equals(cantidad, tarifa.cantidad) && Objects.equals(temporada, tarifa.temporada);
+        return id == tarifa.id && id_habitaciones == tarifa.id_habitaciones && Objects.equals(cantidad, tarifa.cantidad) && Objects.equals(temporada, tarifa.temporada) && Objects.equals(id_hotel, tarifa.id_hotel);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, id_habitaciones, cantidad, temporada);
+        return Objects.hash(id, id_habitaciones, cantidad, temporada, id_hotel);
     }
 
 
@@ -70,6 +79,7 @@ public class Tarifa {
         return "Tarifa{" +
                 "id=" + id +
                 ", id_habitaciones=" + id_habitaciones +
+                ", id_hotel=" + id_hotel +
                 ", cantidad=" + cantidad +
                 ", temporada='" + temporada + '\'' +
                 '}';

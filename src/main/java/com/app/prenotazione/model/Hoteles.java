@@ -29,7 +29,6 @@ public class Hoteles {
     @Column
     private String correo;
 
-
     @Column
     private int telefono;
 
