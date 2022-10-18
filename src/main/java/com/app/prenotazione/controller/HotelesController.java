@@ -6,6 +6,15 @@ import com.app.prenotazione.model.Hoteles;
 import com.app.prenotazione.service.HabitacionesService;
 import com.app.prenotazione.service.HotelesService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.Banner;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.ModelAndView;
+
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.time.LocalDate;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -23,6 +32,16 @@ public class HotelesController {
 
 
     @RequestMapping("/hoteles")
+    public List<Hoteles> obtenerHoteles(){
+        return hotelesService.getAll();
+    }
+
+    @RequestMapping("/ListHoteles")
+    public ModelAndView pantallaHoteles(){
+    List<Hoteles> listHoteles = hotelesService.getAll();
+    ModelAndView modelAndView = new ModelAndView();
+    modelAndView.addObject("ListHoteles", listHoteles);
+    return modelAndView;
     public List<Hoteles> getAll(){
         return hotelesService.getAll() ;
     }
@@ -51,6 +70,5 @@ public class HotelesController {
         hotelesService.eliminar(id);
         return "Hotel eliminado correctamente";
     }
-
 
 }

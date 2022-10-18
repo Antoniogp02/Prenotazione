@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 /.idea/shelf/
 /.idea/compiler.xml
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/vcs.xml
 /.idea/.gitignore
+=======
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/Prenotazione.iml
+/.idea/vcs.xml
+>>>>>>> master

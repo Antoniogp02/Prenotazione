@@ -1,8 +1,6 @@
 package com.app.prenotazione.service;
 
-import com.app.prenotazione.model.Habitaciones;
 import com.app.prenotazione.model.Hoteles;
-import com.app.prenotazione.model.Servicios;
 import com.app.prenotazione.repository.HotelesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,11 +14,14 @@ public class HotelesService {
     private HotelesRepository hotelesRepository;
 
     public List<Hoteles> getAll(){
+
+
+    public List<Hoteles> getAll(){
         return hotelesRepository.findAll();
     }
 
-    public List<Hoteles> obternerOrdenadasPorID(){
-        return hotelesRepository.obtenerHoteles();
+    public Hoteles getById(int id){
+        return hotelesRepository.findById(id).orElse(null);
     }
 
     public Hoteles getById(int id){
