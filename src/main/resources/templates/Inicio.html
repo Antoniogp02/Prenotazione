@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PRENOTAZIONE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" th:href="@{/css/basico.css}">
+    <link rel="stylesheet" th:href="@{/css/carta.css}">
+    <link rel="stylesheet" th:href="@{/css/contact.css}">
+    <link rel="stylesheet" th:href="@{/css/foot.css}">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <nav class="navegacion">
+            <img class="logo" src="Imagenes/pluma.png">
+            <ul class="menu">
+                <li><a href="realogin">HOSPEDAJE</a></li>
+                <li><a href="index.html">RESERVA</a></li>
+                <li><a href="index.html">ALQUILER</a></li>
+                <li><a href="index.html">SERVICIOS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="buscador">
+        <input type="text" placeholder="buscar">
+        <div class="search"></div>
+    </div>
+
+    <div id="cabecera">
+        <video id="video" loop autoplay muted>
+            <source src="https://player.vimeo.com/progressive_redirect/playback/672600128/rendition/720p?loc=external&oauth2_token_id=1027659655&signature=cf2852e35d12c11c22b90671cff0ec7901a46546dcd1bf1dbc80e873e1e80ad7" type='video/mp4;'/>
+        </video>
+
+        <h2>SIGUE TU DESTINO </h2>
+    </div>
+
+</div>
+
+<div class="container mt-5 mb-3">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card p-3 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"><img src="https://www.taj-hotels.es/wp-content/uploads/2017/08/logo-icon-284x300.png"> <i class="bx bxl-mailchimp"></i> </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-0">TAJ</h6> <span>1 days ago</span>
+                        </div>
+                    </div>
+                    <div class="badge"> <span>Hotel</span> </div>
+                </div>
+                <div class="mt-5">
+                    <h3 class="heading">Appartamento Benincampi</h3>
+                    <div class="mt-5">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="mt-3"> <span class="text1">90 <span class="text2">De 100 (Puntos)</span></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"><img src="https://img2.freepng.es/20180721/lqv/kisspng-logo-doubletree-by-hilton-hotel-oradea-hilton-hote-double-twelve-home-5b534ffec77d16.4646227315321866228171.jpg"> <i class="bx bxl-dribble"></i> </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-0">DoubleTree</h6> <span>4 days ago</span>
+                        </div>
+                    </div>
+                    <div class="badge"> <span>Hotel</span> </div>
+                </div>
+                <div class="mt-5">
+                    <h3 class="heading">Istanbul <br>Piyalepasa</h3>
+                    <div class="mt-5">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="mt-3"> <span class="text1">95 <span class="text2">of 100 (Puntos)</span></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card p-3 mb-2">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="icon"><img src="https://1000marcas.net/wp-content/uploads/2020/11/Hampton-Inn-logo.png"> <i class="bx bxl-reddit"></i> </div>
+                        <div class="ms-2 c-details">
+                            <h6 class="mb-0">Hampten</h6> <span>2 days ago</span>
+                        </div>
+                    </div>
+                    <div class="badge"> <span>Hotel</span> </div>
+                </div>
+                <div class="mt-5">
+                    <h3 class="heading">De Cataluña <br>Donnybrook</h3>
+                    <div class="mt-5">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="mt-3"> <span class="text1">92 <span class="text2">of 100 capacity</span></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--Div for Background-->
+<div class="bg text-center">
+
+    <!--Div for Centered Text & Input-->
+    <div class="centered">
+
+        <p class="firstLine"> C &nbsp; O &nbsp; N &nbsp; T &nbsp; A &nbsp; C &nbsp; T &nbsp;
+            A &nbsp; . &nbsp; M &nbsp; E</p>
+
+        <p class="secondLine">ÚNETE Y DISFRUTA DE NUESTRAS OFERTAS</p>
+
+        <p> <input class="InputStyle" placeholder="Introduce tu correo                                          <-
+                          " style="font-family:Arial, FontAwesome" type="text"> </p>
+
+    </div>
+
+    <!--Div for bottom Icons-->
+    <div class="social-btn">
+        <a href="#"  title="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#"  title="Twitter"><i class="fa fa-twitter"></i></a>
+
+    </div>
+
+</div>
+
+
+
+</body>
+<footer>
+    <div class="hex">
+        <ul2>
+            <li2>
+                <a2 class="facebook" href="https://es-es.facebook.com/">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img src="Imagenes/facebook.png">
+                </a2>
+            </li2>
+            <li2>
+                <a2 class="twitter" href="https://twitter.com/?lang=es">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img src="Imagenes/twitter.png">
+                </a2>
+            </li2>
+            <li2>
+                <a2 class="instagram" href="https://www.instagram.com/">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img src="Imagenes/instagram.png">
+                </a2>
+            </li2>
+            <li2>
+                <a2 class="google" href="https://accounts.google.com/v3/signin/identifier?dsh=S-871874718%3A1664737003774122&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Dwm&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Dwm&osid=1&passive=1209600&service=mail&flowName=Gli2fWebSignIn&flowEntry=ServiceLogin&ifkv=AQDHYWqRHrKCD0Jaf-qVQqKSPonOCBPpoiC5fH8tWL9QSWT5kMrZb2fGtDNrYnLpXixs_gcP3CHO1g">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <img src="Imagenes/google.png">
+                </a2>
+            </li2>
+        </ul2>
+
+        <H5>©prenotazione</H5>
+    </div>
+</footer>
+</html>
