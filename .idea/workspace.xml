@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5172f0ce-4214-43a6-9950-8a3cac61b253" name="Changes" comment=" Cambios 11-10-2022 (Controllers y Services)">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2022_19_58__ignorar_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2022_19_58__ignorar_.xml" afterDir="false" />
+    <list default="true" id="5172f0ce-4214-43a6-9950-8a3cac61b253" name="Changes" comment="18/10 ultima">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/resultados.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/controller/InicioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/controller/InicioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/buscador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/buscador.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Interface" />
         <option value="HTML File" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -49,24 +50,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/damda/IdeaProjects/Prenotazione1&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;1d53480640426a96a3cb3563631fc066&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/damda/IdeaProjects/Prenotazione1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "spring.configuration.checksum": "1f22daa20c1dc33778f287aed688b1ca"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\damda\IdeaProjects\prenotazione\Prenotazione\src\main\resources\templates" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.PrenotazioneApplication">
     <configuration name="PrenotazioneApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Prenotazione" />
@@ -117,8 +125,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c03779e3-0150-4f19-9fa3-e4255b0e701f" name="Changes" comment="" />
-      <changelist id="1f4500eb-0252-449b-b992-4b98527fb29d" name="ignorar" comment="" />
+      <changelist id="5172f0ce-4214-43a6-9950-8a3cac61b253" name="Changes" comment="18/10 ultima" />
       <created>1664298594259</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -141,6 +148,7 @@
       <workItem from="1665421855877" duration="3516000" />
       <workItem from="1665501464948" duration="6998000" />
       <workItem from="1665511306243" duration="301000" />
+      <workItem from="1666284906106" duration="2552000" />
     </task>
     <task id="LOCAL-00001" summary="Antonio 1">
       <created>1664303741550</created>
@@ -205,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665510960534</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="18/10 ultima">
+      <created>1666202852725</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666202852725</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +246,7 @@
     <MESSAGE value="07-10-2022 (Controllers y Services)" />
     <MESSAGE value="10-10-2022 (Controllers y Services)" />
     <MESSAGE value=" Cambios 11-10-2022 (Controllers y Services)" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Cambios 11-10-2022 (Controllers y Services)" />
+    <MESSAGE value="18/10 ultima" />
+    <option name="LAST_COMMIT_MESSAGE" value="18/10 ultima" />
   </component>
 </project>

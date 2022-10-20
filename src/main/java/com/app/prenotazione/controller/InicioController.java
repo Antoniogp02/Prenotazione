@@ -26,7 +26,7 @@ public class InicioController {
     @Autowired
     private BuscarService buscarService;
 
-    @GetMapping
+    @GetMapping("/inicio")
     public ModelAndView hotellista(@ModelAttribute Buscar buscar){
         List<Hoteles> primeralista = hotelesService.getAll();
         Collections.shuffle(primeralista);
@@ -48,6 +48,7 @@ public class InicioController {
         }
         modelo.addObject("fechaminima", LocalDate.now());
         modelo.addObject("filtrado", filtrado);
+        System.out.println(buscar.getHotelBuscar());
         return modelo;
     }
 
