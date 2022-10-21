@@ -17,20 +17,21 @@ import java.util.Objects;
 public class Hoteles {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JoinColumn(name = "id")
+    private Integer id;
 
-    @Column
+    @JoinColumn
     private String nombre;
 
-    @Column
+    @JoinColumn
     private String localizacion;
 
-    @Column
+    @JoinColumn
     private String correo;
 
-    @Column
-    private int telefono;
+    @JoinColumn
+    private Integer telefono;
 
 
 

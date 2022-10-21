@@ -19,21 +19,31 @@ public class Habitaciones {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
-    @Column
-    private int num_habitacion;
-    @Column
-    private Hoteles hotel;
-    @Enumerated
-    private EnumType suite, doble, basica, imperial;
-    @Column
-    private int num_personas;
-    @Column
-    private Float precio;
-    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JoinColumn(name = "id")
+    private Integer id;
+
+
+    @JoinColumn(name = "num_habitacion")
+    private Integer num_habitacion;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_hotel")
+    private Hoteles id_hotel;
+
+    @JoinColumn(name = "num_personas")
+    private Integer num_personas;
+
+    @JoinColumn(name = "precio")
+    private Double precio;
+
+    @JoinColumn(name = "tipo_hab")
+    private TipoHabitacion tipo_hab;
+
+    @JoinColumn(name = "fecheEntrada")
     private Date fecha_entrada;
-    @Column
+
+    @JoinColumn(name = "fechaSalida")
     private Date fecha_salida;
 
 }

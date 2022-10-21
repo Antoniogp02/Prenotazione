@@ -1,106 +1,52 @@
 package com.app.prenotazione.model;
 
 
+import lombok.*;
+
 import javax.persistence.*;
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.Date;
 import java.util.Objects;
 
+
 @Entity
 @Table(name = "usuario")
+@Getter
+@Setter
+@EqualsAndHashCode
+@AllArgsConstructor
+@NoArgsConstructor
 public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JoinColumn(name = "id")
     private int id;
+
+    @JoinColumn(name = "nombre")
     private String nombre;
+
+    @JoinColumn(name = "apellidos")
     private String Apellidos;
-    private String Correo;
+
+    @JoinColumn(name = "correo")
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Login email;
+
+    @JoinColumn(name = "fecha_nacimiento")
     private Date Fecha_nacimiento;
+
+    @JoinColumn(name = "dni")
     private String DNI;
-    private int Telefono;
 
+    @JoinColumn(name = "telefono")
+    private Integer Telefono;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
+    public Usuario(String nombre, String apellidos, String dni, Integer telefono, Login email) {
         this.nombre = nombre;
-    }
-
-    public String getApellidos() {
-        return Apellidos;
-    }
-
-    public void setApellidos(String apellidos) {
-        Apellidos = apellidos;
-    }
-
-    public String getCorreo() {
-        return Correo;
-    }
-
-    public void setCorreo(String correo) {
-        Correo = correo;
-    }
-
-    public Date getFecha_nacimiento() {
-        return Fecha_nacimiento;
-    }
-
-    public void setFecha_nacimiento(Date fecha_nacimiento) {
-        Fecha_nacimiento = fecha_nacimiento;
-    }
-
-    public String getDNI() {
-        return DNI;
-    }
-
-    public void setDNI(String DNI) {
-        this.DNI = DNI;
-    }
-
-    public int getTelefono() {
-        return Telefono;
-    }
-
-    public void setTelefono(int telefono) {
-        Telefono = telefono;
-    }
-
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Usuario usuario = (Usuario) o;
-        return id == usuario.id && Telefono == usuario.Telefono && Objects.equals(nombre, usuario.nombre) && Objects.equals(Apellidos, usuario.Apellidos) && Objects.equals(Correo, usuario.Correo) && Objects.equals(Fecha_nacimiento, usuario.Fecha_nacimiento) && Objects.equals(DNI, usuario.DNI);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, nombre, Apellidos, Correo, Fecha_nacimiento, DNI, Telefono);
-    }
-
-
-    @Override
-    public String toString() {
-        return "Usuario{" +
-                "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", Apellidos='" + Apellidos + '\'' +
-                ", Correo='" + Correo + '\'' +
-                ", Fecha_nacimiento=" + Fecha_nacimiento +
-                ", DNI='" + DNI + '\'' +
-                ", Telefono=" + Telefono +
-                '}';
+        this.Apellidos = apellidos;
+        this.DNI = dni;
+        this.Telefono = telefono;
+        this.email = email;
     }
 }

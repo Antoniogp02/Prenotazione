@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5172f0ce-4214-43a6-9950-8a3cac61b253" name="Changes" comment="18/10 ultima">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/resultados.html" afterDir="false" />
+    <list default="true" id="5172f0ce-4214-43a6-9950-8a3cac61b253" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Prenotazione_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Prenotazione_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2022_19_58__ignorar_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2022_19_58__ignorar_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/controller/InicioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/controller/InicioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/buscador.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/buscador.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Habitaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Habitaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Hoteles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Hoteles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Usuario.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,26 +52,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/damda/IdeaProjects/Prenotazione1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "1f22daa20c1dc33778f287aed688b1ca"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\damda\IdeaProjects\prenotazione\Prenotazione\src\main\resources\templates" />
@@ -104,13 +91,13 @@
     </configuration>
     <configuration name="PrenotazioneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="Prenotazione" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.prenotazione.PrenotazioneApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.app.prenotazione.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.prenotazione.PrenotazioneApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
