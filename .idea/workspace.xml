@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5172f0ce-4214-43a6-9950-8a3cac61b253" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Prenotazione_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Prenotazione_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2022_19_58__ignorar_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_2022_19_58__ignorar_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Habitaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Habitaciones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Hoteles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Hoteles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/model/Usuario.java" afterDir="false" />
+    <list default="true" id="5172f0ce-4214-43a6-9950-8a3cac61b253" name="Changes" comment="21/10 ultima">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/controller/Registrarse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/app/prenotazione/controller/RegistrarseController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +18,7 @@
         <option value="Class" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -207,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666202852725</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="21/10 ultima">
+      <created>1666368179002</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666368179002</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +237,7 @@
     <MESSAGE value="10-10-2022 (Controllers y Services)" />
     <MESSAGE value=" Cambios 11-10-2022 (Controllers y Services)" />
     <MESSAGE value="18/10 ultima" />
-    <option name="LAST_COMMIT_MESSAGE" value="18/10 ultima" />
+    <MESSAGE value="21/10 ultima" />
+    <option name="LAST_COMMIT_MESSAGE" value="21/10 ultima" />
   </component>
 </project>

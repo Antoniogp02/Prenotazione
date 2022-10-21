@@ -4,14 +4,13 @@ import com.app.prenotazione.model.Login;
 import com.app.prenotazione.model.Usuario;
 import com.app.prenotazione.service.LoginService;
 import com.app.prenotazione.service.UsuarioService;
-import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 @RestController
 @RequestMapping("/login")
-public class Registrarse {
+public class RegistrarseController {
     @Autowired
     private UsuarioService usuarioService;
     @Autowired
