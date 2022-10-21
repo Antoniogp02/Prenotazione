@@ -23,7 +23,7 @@ public class UsuarioController {
     }
 
     @GetMapping("/usuarios/nuevo")
-    public ModelAndView nuevaReserva(){
+    public ModelAndView nuevaUsuario(){
         ModelAndView model = new ModelAndView("nuevoUsuario");
         Usuario usuario = new Usuario();
         model.addObject("usuario", usuario);

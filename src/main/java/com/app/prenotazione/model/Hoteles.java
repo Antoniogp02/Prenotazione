@@ -20,17 +20,17 @@ public class Hoteles {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @Column
+    @Column (name = "nombre")
     private String nombre;
 
-    @Column
+    @Column (name = "localizacion")
     private String localizacion;
 
-    @Column
+    @Column (name = "correo")
     private String correo;
 
 
-    @Column
+    @Column (name = "telefono")
     private int telefono;
 
 
