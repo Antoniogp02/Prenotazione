@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface LoginRepository extends JpaRepository<Login, Integer> {
 
-    @Query(value = "select email, contrasenya from Login", nativeQuery = true)
-    List<Usuario> obtenerUsuarios();
+    @Query(value = "select email, contrasenya from login", nativeQuery = true)
+    List<Usuario> obtenerusuarios();
 
 }
