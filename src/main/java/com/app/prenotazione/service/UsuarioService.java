@@ -1,11 +1,10 @@
+/*
 package com.app.prenotazione.service;
 
 import com.app.prenotazione.model.*;
 import com.app.prenotazione.repository.LoginRepository;
 import com.app.prenotazione.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -54,9 +53,8 @@ public class UsuarioService {
     }
 
 
-    @Override
-    public UserDetails loadByUsername (String username) throws UsernameNotFoundException{
-        Login login = loginRepository.findTopByUsername(username);
-    }
 
 }
+
+
+ */

@@ -1,4 +1,4 @@
-package com.app.prenotazione.controller;
+/*package com.app.prenotazione.controller;
 
 import com.app.prenotazione.model.*;
 import com.app.prenotazione.service.*;
@@ -59,3 +59,6 @@ public class ReservaController {
     }
 
 }
+
+
+ */

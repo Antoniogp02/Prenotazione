@@ -1,4 +1,4 @@
-package com.app.prenotazione.controller;
+/*package com.app.prenotazione.controller;
 
 import com.app.prenotazione.model.MapaMundi;
 import com.app.prenotazione.model.Usuario;
@@ -24,3 +24,6 @@ public class MapaMundiController {
 
 
 }
+
+
+ */

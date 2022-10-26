@@ -15,9 +15,16 @@ import javax.persistence.*;
 public class Login {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int id;
+
     @JoinColumn(name = "email")
     private String email;
 
     @JoinColumn(name = "contrasenya")
     private String contrasenya;
+
+
+    @JoinColumn(name = "rol")
+    private String rol;
 }

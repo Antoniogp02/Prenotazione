@@ -1,8 +1,9 @@
+/*
 package com.app.prenotazione.controller;
 
 
 import com.app.prenotazione.model.*;
-import com.app.prenotazione.service.UsuarioService;
+import com.app.prenotazione.service.UsuarioSVCI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -15,6 +16,8 @@ public class UsuarioController {
 
     @Autowired
     private UsuarioService usuarioService;
+
+
 
 
     @RequestMapping("/usuarios")
@@ -44,3 +47,6 @@ public class UsuarioController {
     }
 
 }
+
+
+ */
