@@ -2,8 +2,6 @@ package com.app.prenotazione.service;
 
 
 import com.app.prenotazione.model.Habitaciones;
-import com.app.prenotazione.model.Hoteles;
-import com.app.prenotazione.model.Servicios;
 import com.app.prenotazione.model.Tarifa;
 import com.app.prenotazione.repository.TarifaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

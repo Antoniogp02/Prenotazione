@@ -1,4 +1,4 @@
-package com.app.prenotazione.repository;
+/*package com.app.prenotazione.repository;
 
 
 import com.app.prenotazione.model.Hoteles;
@@ -19,3 +19,6 @@ public interface HotelesRepository extends JpaRepository<Hoteles,Integer>{
     @Query(value = "select h from Hoteles h order by h.nombre ")
     List<Hoteles> obtenerHoteles();
 }
+
+
+ */

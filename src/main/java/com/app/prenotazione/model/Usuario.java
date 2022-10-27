@@ -1,8 +1,10 @@
 package com.app.prenotazione.model;
 
 
+import com.app.prenotazione.model.Enumerados.Sexo;
+
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.Objects;
 
 @Entity
@@ -23,9 +25,10 @@ public class Usuario {
     @Column(name = "dni")
     private String Dni;
     @Column(name = "genero")
-    private Boolean Genero;
+    @Enumerated(EnumType.ORDINAL)
+    private Sexo Genero;
     @Column(name = "fecha_nacimiento")
-    private Date Fecha_nacimiento;
+    private LocalDate Fecha_nacimiento;
 
     @Column(name = "telefono")
     private int Telefono;
@@ -33,7 +36,7 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(int id, String nombre, String apellidos, String correo, String dni, Boolean genero, Date fecha_nacimiento, int telefono) {
+    public Usuario(int id, String nombre, String apellidos, String correo, String dni, Sexo genero, LocalDate fecha_nacimiento, int telefono) {
         this.id = id;
         this.nombre = nombre;
         Apellidos = apellidos;
@@ -84,19 +87,19 @@ public class Usuario {
         Dni = dni;
     }
 
-    public Boolean getGenero() {
+    public Sexo getGenero() {
         return Genero;
     }
 
-    public void setGenero(Boolean genero) {
+    public void setGenero(Sexo genero) {
         Genero = genero;
     }
 
-    public Date getFecha_nacimiento() {
+    public LocalDate getFecha_nacimiento() {
         return Fecha_nacimiento;
     }
 
-    public void setFecha_nacimiento(Date fecha_nacimiento) {
+    public void setFecha_nacimiento(LocalDate fecha_nacimiento) {
         Fecha_nacimiento = fecha_nacimiento;
     }
 

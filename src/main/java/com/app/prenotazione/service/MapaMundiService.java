@@ -1,10 +1,6 @@
 package com.app.prenotazione.service;
 
-import com.app.prenotazione.model.Habitaciones;
-import com.app.prenotazione.model.Hoteles;
 import com.app.prenotazione.model.MapaMundi;
-import com.app.prenotazione.model.Servicios;
-import com.app.prenotazione.repository.HotelesRepository;
 import com.app.prenotazione.repository.MapaMundiRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

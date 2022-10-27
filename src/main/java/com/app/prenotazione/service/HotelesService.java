@@ -1,8 +1,7 @@
-package com.app.prenotazione.service;
+/*package com.app.prenotazione.service;
 
 import com.app.prenotazione.model.Habitaciones;
 import com.app.prenotazione.model.Hoteles;
-import com.app.prenotazione.model.Servicios;
 import com.app.prenotazione.repository.HotelesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,7 +25,7 @@ public class HotelesService {
     }
 
 
-    public void guardarHotel(int id, String nombre, String correo , String localizacion, Integer telefono, Habitaciones habitaciones, Servicios servicios){
+    public void guardarHotel(int id, String nombre, String correo , String localizacion, Integer telefono, Habitaciones habitaciones){
         Hoteles hotelesGuardar = new Hoteles();
         if(id!= 0){
             Hoteles h = hotelesRepository.findById(id).orElse(null);
@@ -39,7 +38,6 @@ public class HotelesService {
         hotelesGuardar.setLocalizacion(localizacion);
         hotelesGuardar.setTelefono(telefono);
         hotelesGuardar.setHabitaciones(habitaciones);
-        hotelesGuardar.setServicios(servicios);
     }
 
     public void guardarHotel(Hoteles hoteles){
@@ -51,3 +49,5 @@ public class HotelesService {
     }
 
 }
+
+ */

@@ -1,4 +1,4 @@
-package com.app.prenotazione.controller;
+/*package com.app.prenotazione.controller;
 
 
 import com.app.prenotazione.model.Habitaciones;
@@ -68,4 +68,6 @@ public class HotelesController {
 
     }
 
+
+ */
 
