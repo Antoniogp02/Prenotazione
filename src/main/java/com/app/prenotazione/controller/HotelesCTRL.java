@@ -44,7 +44,7 @@ public class HotelesCTRL {
         hotel.setTelefono(hotelForm.getTelefono());
         hotel.setHabitaciones(hotelForm.getHabitaciones());
         hotelesSVC.addHoteles(hotel);
-        return "redirect:/listHoteles";
+        return "redirect:/hoteles/listHotel";
     }
 
 

@@ -41,9 +41,10 @@ public class HabitacionesCTRL {
         Habitaciones habitaciones = new Habitaciones();
         habitaciones.setNum_habitacion(habitacionesForm.getNum_habitacion());
         habitaciones.setNum_personas(habitacionesForm.getNum_personas());
-        habitaciones.setPrecio(habitacionesForm.getPrecio());
+        habitaciones.setPrecio(Double.valueOf(habitacionesForm.getPrecio()));
         habitaciones.setFecha_entrada(fecha1);
         habitaciones.setFecha_salida(fecha);
+        habitaciones.setHoteles(habitacionesForm.getHoteles());
         habitacionesSVC.addHabitaciones(habitaciones);
         return "redirect:/listHabitaciones";
     }

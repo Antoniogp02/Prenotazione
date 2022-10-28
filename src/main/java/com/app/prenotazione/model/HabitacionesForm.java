@@ -12,4 +12,5 @@ public class HabitacionesForm {
     private Integer precio;
     private String fecha_entrada;
     private String fecha_salida;
+    private Hoteles hoteles;
 }

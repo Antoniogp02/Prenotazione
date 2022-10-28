@@ -47,7 +47,7 @@ public class UsuarioCTRL {
         usuario.setGenero(userForm.getGenero());
         usuario.setFecha_nacimiento(fecha);
         usuarioSVC.addUsuario(usuario);
-        return "redirect:/list";
+        return "redirect:/user/list";
     }
 
 
