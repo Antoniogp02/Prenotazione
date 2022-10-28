@@ -7,9 +7,9 @@ import lombok.Setter;
 @Getter  @Setter
 public class HabitacionesForm {
 
-    private int num_habitacion;
-    private int num_personas;
-    private int precio;
+    private Integer num_habitacion;
+    private Integer num_personas;
+    private Integer precio;
     private String fecha_entrada;
     private String fecha_salida;
 }
