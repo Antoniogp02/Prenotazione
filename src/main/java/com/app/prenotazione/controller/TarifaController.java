@@ -1,6 +1,7 @@
-package com.app.prenotazione.controller;
+/*package com.app.prenotazione.controller;
 
 import com.app.prenotazione.model.*;
+import com.app.prenotazione.repository.HabitacionesSVC;
 import com.app.prenotazione.service.HabitacionesService;
 import com.app.prenotazione.service.TarifaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ public class TarifaController {
     private TarifaService tarifaService;
 
     @Autowired
-    private HabitacionesService habitacionesService;
+    private HabitacionesSVC habitacionesSVC;
 
     @RequestMapping("/tarifas")
     public List<Tarifa> obtenerTarifas() {
@@ -48,3 +49,5 @@ public class TarifaController {
     }
 
 }
+
+ */

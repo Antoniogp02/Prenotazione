@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
@@ -29,11 +30,11 @@ public class Habitaciones {
     private int num_personas;
 
     @Column
-    private Float precio;
+    private Integer precio;
 
     @Column
-    private Date fecha_entrada;
+    private LocalDate fecha_entrada;
     @Column
-    private Date fecha_salida;
+    private LocalDate fecha_salida;
 
 }
