@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel ="stylesheet" href=" registerEstilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+
+<div class="container" >
+  <header>
+    <nav class="navegacion">
+      <img class="logo" src="Imagenes/pluma.png">
+      <ul class="menu">
+        <li><a href="index.html">HOSPEDAJE</a></li>
+        <li><a href="Reserva.html">RESERVA</a></li>
+        <li><a href="index.html">ALQUILER</a></li>
+        <li><a href="index.html">SERVICIOS</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+
+<div class="container">
+  <div class="row py-5 mt-4 align-items-center">
+    <!-- For Demo Purpose -->
+    <div class="col-md-5 pr-lg-5 mb-5 mb-md-0">
+      <img src="https://bootstrapious.com/i/snippets/sn-registeration/illustration.svg" alt="" class="img-fluid mb-3 d-none d-md-block">
+      <h1 style = "color : white ; margin-left : 80px">Crea tu cuenta</h1>
+    </div>
+
+    <!-- Registeration Form -->
+    <div class="col-md-7 col-lg-6 ml-auto">
+      <form action="#">
+        <div class="row">
+
+          <!-- First Name -->
+          <div class="input-group col-lg-6 mb-4" >
+            <div class="input-group-prepend" >
+
+            </div>
+            <input id="usuario" type="text" name="usuario" placeholder="Nombre" class="form-control border-left-0 border-md" style = "height : 20px ; background: linear-gradient(#AEB9F2 , #BAA0F2)">
+          </div>
+
+          <!-- Last Name -->
+          <div class="input-group col-lg-6 mb-4">
+            <div class="input-group-prepend">
+            </div>
+            <input id="apellidos" type="text" name="apellidos" placeholder="Apellidos" class="form-control border-left-0 border-md" style = "height : 20px ;background: linear-gradient(#AEB9F2 , #BAA0F2)">
+          </div>
+
+          <!-- Email Address -->
+          <div class="input-group col-lg-12 mb-4">
+            <div class="input-group-prepend">
+
+            </div>
+            <input id="correo" type="email" name="correo" placeholder="Correo" class="form-control  border-left-0 border-md" style = "height : 20px ; background: linear-gradient(#AEB9F2 , #BAA0F2)">
+          </div>
+
+          <div class="input-group col-lg-12 mb-4">
+            <div class="input-group-prepend">
+
+            </div>
+            <input id="dni" type="text" name="dni" placeholder="Nº DNI" class="form-control  border-left-0 border-md" style = "height : 20px ; background: linear-gradient(#AEB9F2 , #BAA0F2)">
+          </div>
+
+
+          <!-- Phone Number -->
+          <div class="input-group col-lg-12 mb-4">
+            <div class="input-group-prepend">
+
+            </div>
+            <select id="countryCode" name="countryCode" style="max-width: 80px ; background: linear-gradient(#AEB9F2 , #BAA0F2)" class="custom-select form-control  border-left-0 border-md h-100 font-weight-bold text-muted">
+              <option value="">+34</option>
+              <option value="">+12</option>
+              <option value="">+10</option>
+              <option value="">+15</option>
+              <option value="">+18</option>
+            </select>
+            <input id="telefono" type="tel" name="telefono" placeholder="Nº de Teléfono" class="form-control  border-md border-left-0 pl-3" style = "height : 20px ; background: linear-gradient(#AEB9F2 , #BAA0F2)">
+          </div>
+          <div class="input-group col-lg-12 mb-4">
+            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Fecha de Nacimiento<span class="text-danger"> *</span></label> <input class = "form-control  border-left-0 border-md"type="date" placeholder="Fecha de Nacimiento" name="fecha_nacimiento" style = "height : 20px ; background: linear-gradient(#AEB9F2 , #BAA0F2)" />
+
+            </div>
+
+          </div>
+
+
+          <div class="input-group col-lg-6 mb-4">
+            <div class="input-group-prepend">
+
+            </div>
+            <input id="username" type="text" name="usuario" placeholder="Usuario" class="form-control  border-left-0 border-md" style = "height : 20px ; background: linear-gradient(#AEB9F2 , #BAA0F2)">
+          </div>
+
+
+          <!-- Password -->
+          <div class="input-group col-lg-6 mb-4">
+            <div class="input-group-prepend">
+
+            </div>
+            <input id="password" type="password" name="password" placeholder="Contraseña" class="form-control  border-left-0 border-md" style = "height : 20px ; background: linear-gradient(#AEB9F2 , #BAA0F2)">
+          </div>
+
+
+          <!-- Submit Button -->
+          <div class="form-group col-lg-12 mx-auto mb-0">
+            <a href="#" class="btn btn-primary btn-block py-2">
+              <span class="font-weight-bold">Crea tu cuenta</span>
+            </a>
+          </div>
+
+          <!-- Divider Text -->
+          <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
+            <div class="border-bottom w-100 ml-5"></div>
+            <span class="px-2 small text-muted font-weight-bold text-muted">O</span>
+            <div class="border-bottom w-100 mr-5"></div>
+          </div>
+
+          <!-- Social Login -->
+          <div class="form-group col-lg-12 mx-auto">
+            <a href="#" class="btn btn-primary btn-block py-2 btn-facebook">
+              <i class="fa fa-facebook-f mr-2"></i>
+              <span class="font-weight-bold">Continua con  Facebook</span>
+            </a>
+            <a href="#" class="btn btn-primary btn-block py-2 btn-twitter">
+              <i class="fa fa-twitter mr-2"></i>
+              <span class="font-weight-bold">Continua con Twitter</span>
+            </a>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<footer>
+  <div class="hex">
+    <ul2>
+      <li2>
+        <a2 class="facebook" href="https://es-es.facebook.com/">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="Imagenes/facebook.png">
+        </a2>
+      </li2>
+      <li2>
+        <a2 class="twitter" href="https://twitter.com/?lang=es">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="Imagenes/twitter.png">
+        </a2>
+      </li2>
+      <li2>
+        <a2 class="instagram" href="https://www.instagram.com/">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="Imagenes/instagram.png">
+        </a2>
+      </li2>
+      <li2>
+        <a2 class="google" href="https://accounts.google.com/v3/signin/identifier?dsh=S-871874718%3A1664737003774122&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Dwm&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F%3Ftab%3Dwm&osid=1&passive=1209600&service=mail&flowName=Gli2fWebSignIn&flowEntry=ServiceLogin&ifkv=AQDHYWqRHrKCD0Jaf-qVQqKSPonOCBPpoiC5fH8tWL9QSWT5kMrZb2fGtDNrYnLpXixs_gcP3CHO1g">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <img src="Imagenes/google.png">
+        </a2>
+      </li2>
+    </ul2>
+
+    <H5>© prenotazione</H5>
+  </div>
+</footer>
+
+<script>
+  $(function () {
+    $('input, select').on('focus', function () {
+      $(this).parent().find('.input-group-text').css('border-color', '#80bdff');
+    });
+    $('input, select').on('blur', function () {
+      $(this).parent().find('.input-group-text').css('border-color', '#ced4da');
+    });
+  });
+</script>
+
+</html>
